@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "postgres": "^3.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node graph.js",
+    "server": "nodemon graph.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "app",
+    "React",
+    "Node.js",
+    "Express"
+  ],
+  "author": "Maxim Kryzhanovskiy",
+  "license": "ISC"
+}
